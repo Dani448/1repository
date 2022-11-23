@@ -1,0 +1,45 @@
+#include<stdio.h>
+
+int main() {
+    
+    char answrs;
+    int qntt;
+    float sala, nsala;
+    
+    printf("***********Super Amazing Salary Calculator 2000's - SASC2***********\n");
+    printf("***********You will regret to see your result, but here we go!***********\n");
+    
+    do{
+        printf("Type your miserable salary, fool!:\n");
+        scanf("%f", &sala);
+        
+        if(sala>=1 && sala<=400){
+            nsala=(sala*0.15);
+            printf("Your new miserable salary: $%.2f\nIncreased only: $%.2f\nPercent: 15%\nRespect. Wish you luck on your journey, warrior!\n", nsala+sala, nsala);
+        }
+        else if(sala>=400.01 && sala<=800){
+            nsala=(sala*0.12);
+            printf("Your new miserable salary: $%.2f\nIncreased only: $%.2f\nPercent: 12%\nRespect. Wish you luck on your journey!\n", nsala+sala, nsala);
+        }
+        else if(sala>=800.01 && sala<=1200){
+            nsala=(sala*0.10);
+            printf("Your new miserable salary: $%.2f\nIncreased only: $%.2f\nPercent: 10%\nRespect. Wish you luck on your journey!\n", nsala+sala, nsala);
+        }
+        else if(sala>=1200.01 && sala<=2000.00){
+            nsala=(sala*0.7);
+            printf("Your new miserable salary: $%.2f\nIncreased only: $%.2f\nPercent: 7%\n", nsala+sala, nsala);
+        }
+        else if(sala>=2000.00){
+            nsala=(sala*0.4);
+            printf("Your new miserable salary: $%.2f\nIncreased only: $%.2f\nPercent: 4%\n", nsala+sala, nsala);
+        }
+        else{
+            printf("How did you get in here?\n");
+        }
+        printf("Well done!\nWanna try again? Y for yes N for nop.\n");
+        scanf(" %c", &answrs);
+    }
+    while(answrs=='Y' || answrs=='y' );
+    
+return 0;
+}

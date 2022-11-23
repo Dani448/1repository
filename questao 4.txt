@@ -1,0 +1,49 @@
+#include<stdio.h>
+
+int main(){
+    
+    char y;
+    float n1, n2;
+    
+    do{
+        printf("Number to multiply:\n");
+        scanf("%f", &n1);
+        
+        printf("******Multiplication table******\n");
+        n2=(n1*1);
+        printf("1x%.2f = %.2f\n", n1, n2);
+        
+        n2=(n1*2);
+        printf("2x%.2f = %.2f\n", n1, n2);
+        
+        n2=(n1*3);
+        printf("3x%.2f = %.2f\n", n1, n2);
+        
+        n2=(n1*4);
+        printf("4x%.2f = %.2f\n", n1, n2);
+        
+        n2=(n1*5);
+        printf("5x%.2f = %.2f\n", n1, n2);
+        
+        n2=(n1*6);
+        printf("6x%.2f = %.2f\n", n1, n2);
+        
+        n2=(n1*7);
+        printf("7x%.2f = %.2f\n", n1, n2);
+        
+        n2=(n1*8);
+        printf("8x%.2f = %.2f\n", n1, n2);
+        
+        n2=(n1*9);
+        printf("9x%.2f = %.2f\n", n1, n2);
+        
+        n2=(n1*10);
+        printf("10x%.2f = %.2f\n", n1, n2);
+        
+        printf("Wanna try again?\n");
+        scanf(" %c", &y);
+    }
+    while(y=='Y' || y=='y');
+    
+return 0;    
+}

@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main(){
+    
+    float  n1, total=0, media=0;
+    int i, totaln1=0;
+    
+    for (i=1;i<=6;i++){
+        
+        printf("Digite numeros positivos e negativos:\n");
+        scanf("%f", &n1);
+        
+        if (n1>0){
+            totaln1+=1;
+            total+=n1;
+            
+        }
+      }
+      
+      media=total/totaln1;
+      
+      printf("Valores positivos: %d\n", totaln1);
+      printf("Media: %.2f\n", media);
+     
+    return 0;
+}
